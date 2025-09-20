@@ -32,6 +32,12 @@ namespace Fungus
 
         protected EventDispatcher eventDispatcher;
 
+        private void Start()
+        {
+            
+        }
+
+
         protected virtual void OnEnable()
         {
             eventDispatcher = FungusManager.Instance.EventDispatcher;

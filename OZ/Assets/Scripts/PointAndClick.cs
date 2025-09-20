@@ -6,11 +6,14 @@ public class Target : MonoBehaviour
     public float speed;
     public float perspectiveScale;
     public float scaleRatio;
+    
+    private SpriteRenderer spriteRenderer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         followSpot = transform.position;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
